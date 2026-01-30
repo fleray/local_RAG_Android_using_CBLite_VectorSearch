@@ -45,7 +45,7 @@ You can use other TFLite embedding models. Update the `MODEL_NAME` in `ml/Embedd
 - Accessible through Llamatik (llama.cpp JNI bridge)
 - Recommended file:  `Llama-3.2-3B-Instruct-Q4_K_S.gguf`
 - Size: ~1.93GB
-- Alternative: You can use DeepSeek R1 1.5B (DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf of size 1.89GB)
+- Alternative: You can use DeepSeek R1 1.5B like `DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf` of size 1.89GB
 
 **Download Steps:**
 1. Open LLMStudio and search your LLM
