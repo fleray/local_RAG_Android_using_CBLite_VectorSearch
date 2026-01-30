@@ -17,7 +17,7 @@ class LlmInference(private val context: Context) {
     
     // Model file name - should be placed in assets folder
     // Ensure this file matches what is in your assets
-    private val MODEL_NAME = "Qwen2.5-1.5B-Instruct.Q8_0.gguf"
+    private val MODEL_NAME = "Llama-3.2-3B-Instruct-Q4_K_S.gguf"
     
     suspend fun initialize() = withContext(Dispatchers.IO) {
         try {
@@ -113,7 +113,7 @@ $context
 
 User Question: $userQuery
 
-Answer: Provide a clear, helpful answer based on the context above. NEVER repeat the question and NEVER expose your thoughts. If the context doesn't contain enough information to answer the question, say so politely."""
+Answer: Provide a clear, helpful answer based on the context above. If the context doesn't contain enough information to answer the question, say so politely."""
     }
     
     fun close() {
