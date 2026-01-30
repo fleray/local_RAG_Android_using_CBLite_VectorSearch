@@ -82,7 +82,7 @@ This app uses Couchbase Lite Enterprise Edition for vector search capabilities. 
 On first launch, the app will:
 1. Initialize the Couchbase Lite database
 2. Load the baggage policy documents
-3. Generate embeddings for all document chunks (takes 2-5 minutes)
+3. Generate embeddings for all document chunks (highly depends on the number of documents: for 4 small docs it takes a few seconds)
 4. Store vectors in the database
 
 Subsequent launches will be instant as the database is already initialized.
@@ -98,8 +98,8 @@ Ask questions like:
 
 ## Performance Notes
 
-- **First query**: May take 5-10 seconds as the LLM loads into memory
-- **Subsequent queries**: 2-5 seconds depending on device
+- **First query**: MAY VARY from 5-10 seconds MINIMUM as the LLM loads into memory, up to 1-3 minutes depending on target devices (OLD/NEW) and GPU acceleration availability
+- **Subsequent queries**: MAY VARY from 2-5 seconds up to 1-3 minutes depending on target devices (OLD/NEW) and GPU acceleration availability
 - **Memory usage**: ~2-3GB during inference
 - **Storage**: ~2GB for models + database
 
@@ -125,7 +125,6 @@ Ask questions like:
 This project is for educational and evaluation purposes. Ensure you comply with:
 - Couchbase Lite Enterprise license terms
 - Google's Gemma model license
-- MediaPipe license
 
 ## Credits
 
