@@ -33,17 +33,24 @@ You can use other TFLite embedding models. Update the `MODEL_NAME` in `ml/Embedd
 
 ### 2. LLM Model
 
-**Gemma 2B (int4 quantized)**
-- Download from: [Google AI Edge Models](https://ai.google.dev/edge/mediapipe/solutions/genai/llm_inference#models)
-- Recommended file: `gemma-2b-it-gpu-int4.bin`
-- Size: ~1.5GB
-- Alternative: You can use Gemma 1B for smaller size (~529MB)
+**Option 1: Gemma3 1B (int4 quantized)**
+- Download from: LLMStudio
+- Accessible through Llamatik (llama.cpp JNI bridge)
+- Recommended file: `gemma-3-1b-it-Q8_0.gguf` 
+- Size: ~1.07GB
+- Alternative: You can use Gemma3 1B for smaller size (~529MB)
+
+**Option 2: Llama-3.2-3B (int4 quantized)**
+- Download from: LLMStudio
+- Accessible through Llamatik (llama.cpp JNI bridge)
+- Recommended file:  `Llama-3.2-3B-Instruct-Q4_K_S.gguf`
+- Size: ~1.93GB
+- Alternative: You can use DeepSeek R1 1.5B (DeepSeek-R1-Distill-Qwen-1.5B-Q8_0.gguf of size 1.89GB)
 
 **Download Steps:**
-1. Visit the MediaPipe LLM Inference page
-2. Download the Gemma 2B IT GPU INT4 model
-3. Rename to `gemma-2b-it-gpu-int4.bin` if needed
-4. Place in `app/src/main/assets/`
+1. Open LLMStudio and search your LLM
+2. Download the LLM model, for example `Llama-3.2-3B-Instruct-Q4_K_S.gguf`
+3. Place in `app/src/main/assets/`
 
 ### Assets Folder Structure
 
