@@ -14,7 +14,7 @@ A local RAG-powered Android chatbot that answers questions about airline baggage
 
 - **Database**: Couchbase Lite 3.3 with Vector Search extension
 - **Embeddings**: MediaPipe Text Embedder (Universal Sentence Encoder)
-- **LLM**: Gemma 2B (int4 quantized) via MediaPipe LLM Inference
+- **LLM**: gemma-3-1b-it-Q8_0.gguf (1.07 GB) OR Llama-3.2-3B-Instruct-Q4_K_S.gguf (1.93 GB) via Llamatik
 - **UI**: Jetpack Compose with Material 3
 
 ## Required Model Files
