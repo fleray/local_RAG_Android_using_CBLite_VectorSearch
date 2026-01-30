@@ -98,8 +98,8 @@ Ask questions like:
 
 ## Performance Notes
 
-- **First query**: May take 5-10 seconds as the LLM loads into memory
-- **Subsequent queries**: MAY VARY : from 2-5 seconds depending on RECENT devices up to 1-3 minutes on old devices
+- **First query**: MAY VARY from 5-10 seconds MINIMUM as the LLM loads into memory, up to 1-3 minutes depending on target devices (OLD/NEW) and GPU acceleration availability
+- **Subsequent queries**: MAY VARY from 2-5 seconds up to 1-3 minutes depending on target devices (OLD/NEW) and GPU acceleration availability
 - **Memory usage**: ~2-3GB during inference
 - **Storage**: ~2GB for models + database
 
